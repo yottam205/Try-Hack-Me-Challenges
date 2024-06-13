@@ -30,7 +30,8 @@ Answer the questions below
     
     *Make sure to delete the decimal number in the seconds.*
     
-    ![Screenshot 2024-06-06 at 10.54.50.png](.assets/carnage/1.png)
+  <img width="1284" alt="1" src="https://github.com/yottam205/Try-Hack-Me-Challenges/assets/117525375/d6b438a2-c423-4898-bfd8-9a2ac9927e8b">
+
     
 - What is the name of the zip file that was downloaded?
 - Answer
@@ -45,14 +46,16 @@ Answer the questions below
 - Without downloading the file, what is the name of the file in the zip file?
 - Answer
     
-    ![Screenshot 2024-06-06 at 10.58.10.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/98e0a4b1-ac4f-485c-b14c-f2c379e38a49/5b7df4b7-0c44-4a19-a69c-803b2ccea0de/Screenshot_2024-06-06_at_10.58.10.png)
+    <img width="679" alt="2" src="https://github.com/yottam205/Try-Hack-Me-Challenges/assets/117525375/8ec0265d-a028-410a-a77a-80eda5369a97">
+
     
 - What is the name of the webserver of the malicious IP from which the zip file was downloaded?
 - Answer
     
     If we right-click the packet and follow the TCP stream, we’ll be shown another window with more details and the full stream conversation. From here, we can answer the previous questions as well as this one. To find the answer, we’ll scroll down.
     
-    ![Screenshot 2024-06-06 at 11.07.47.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/98e0a4b1-ac4f-485c-b14c-f2c379e38a49/0b745e6f-0ab0-4027-b8f0-53dd798f4640/Screenshot_2024-06-06_at_11.07.47.png)
+    <img width="960" alt="3" src="https://github.com/yottam205/Try-Hack-Me-Challenges/assets/117525375/519386cf-e242-4758-846f-fbe4817cc850">
+
     
      
     
@@ -75,7 +78,8 @@ Answer the questions below
     
     By following the stream of the first packet, we can see the certificates and the answer to this question.
     
-    ![Screenshot 2024-06-06 at 11.32.28.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/98e0a4b1-ac4f-485c-b14c-f2c379e38a49/312f4767-2ee7-4493-b80e-d8b52980a028/Screenshot_2024-06-06_at_11.32.28.png)
+    <img width="965" alt="4" src="https://github.com/yottam205/Try-Hack-Me-Challenges/assets/117525375/4dcaa042-8101-40a2-a62c-63d1eb6b8d83">
+
     
 - What are the two IP addresses of the Cobalt Strike servers? Use VirusTotal (the Community tab) to confirm if IPs are identified as Cobalt Strike C2 servers. (answer format: enter the IP addresses in sequential order)
 - Hint
@@ -86,9 +90,11 @@ Answer the questions below
     
     To view the conversation window, we’ll use the filter `http.request.method == "GET"`. We’ll then go to statistics → conversations. Here we’ll click the TCP tab. There are a lot of IPs recorded. To narrow down our search, we’ll look at the most communicating IPs because C2 servers communicate with GET and POST methods. If we take them to VirusTotal and look at the community tab, that will confirm that it is a Cobalt Strike C2 server.
     
-    ![Screenshot 2024-06-06 at 11.49.27.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/98e0a4b1-ac4f-485c-b14c-f2c379e38a49/006fe36c-45e3-454b-98c4-fc565616c983/Screenshot_2024-06-06_at_11.49.27.png)
+    <img width="1440" alt="5" src="https://github.com/yottam205/Try-Hack-Me-Challenges/assets/117525375/11283239-7508-4eaf-84dc-f81c5d399ba7">
+
     
-    ![Screenshot 2024-06-06 at 11.49.20.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/98e0a4b1-ac4f-485c-b14c-f2c379e38a49/afc338e8-4efc-4c88-8a6e-109dd6f509c0/Screenshot_2024-06-06_at_11.49.20.png)
+    <img width="430" alt="6" src="https://github.com/yottam205/Try-Hack-Me-Challenges/assets/117525375/85fd9a50-3360-4bde-9c2b-f91cb7cea4d8">
+
     
 - What is the Host header for the first Cobalt Strike IP address from the previous question?
 - Answer
@@ -104,9 +110,11 @@ Answer the questions below
     
     To find the answer, I used the filter `ip.addr == 185.106.96.158` which is the IP of the first C2. I then clicked on edit → preferences → name resolution → resolve network (IP) address and OK. It’ll show the domain name instead of the IP address. I then went to VirusTotal to confirm that.
     
-    ![Screenshot 2024-06-06 at 12.06.21.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/98e0a4b1-ac4f-485c-b14c-f2c379e38a49/1190f01b-b5cc-485e-b20c-925423b8fdb9/Screenshot_2024-06-06_at_12.06.21.png)
+    <img width="723" alt="7" src="https://github.com/yottam205/Try-Hack-Me-Challenges/assets/117525375/7b6f9d08-e24f-48d7-9a86-b59f615d2382">
+
     
-    ![Screenshot 2024-06-06 at 11.49.20.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/98e0a4b1-ac4f-485c-b14c-f2c379e38a49/d345d666-a9b1-4dee-a99e-8eef4c7606b6/Screenshot_2024-06-06_at_11.49.20.png)
+    <img width="430" alt="8" src="https://github.com/yottam205/Try-Hack-Me-Challenges/assets/117525375/53ce5618-f2f9-4636-8f43-21d188d7eecc">
+
     
 - What is the domain name of the second Cobalt Strike server IP?  You may use VirusTotal to confirm if it's the Cobalt Strike server (check the Community tab).
 - Hint
@@ -126,35 +134,40 @@ Answer the questions below
     
     Here we’ll have to follow the POST command, just like we did with the GET command. So we’ll use the filter `http.request.method == "POST"` and we’ll follow the TCP stream to find out the answer.
     
-    ![Screenshot 2024-06-06 at 15.50.38.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/98e0a4b1-ac4f-485c-b14c-f2c379e38a49/f8b20857-12ba-4224-8302-84453cfda46e/Screenshot_2024-06-06_at_15.50.38.png)
+    <img width="959" alt="9" src="https://github.com/yottam205/Try-Hack-Me-Challenges/assets/117525375/fb4e45aa-e587-41ce-929e-b0651b1864d0">
+
     
 - What are the first eleven characters that the victim host sends out to the malicious domain involved in the post-infection traffic?
 - Answer
     
     If we look at the same window, it is just right above the last answer.
     
-    ![Screenshot 2024-06-06 at 15.52.11.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/98e0a4b1-ac4f-485c-b14c-f2c379e38a49/91856126-ad67-4b50-a112-65bed63c2abd/Screenshot_2024-06-06_at_15.52.11.png)
+    <img width="961" alt="10" src="https://github.com/yottam205/Try-Hack-Me-Challenges/assets/117525375/4d4db76f-f86a-4876-9b7f-0dc5c0b51f59">
+
     
 - What was the length for the first packet sent out to the C2 server?
 - Answer
     
     Here we’ll have to go back to the filter we’ve used before and look at packet 3822, which is the first packet we see when we use the filter `http.request.method == "POST"`. We can see the answer under the length column.
     
-    ![Screenshot 2024-06-06 at 15.54.39.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/98e0a4b1-ac4f-485c-b14c-f2c379e38a49/ff60faa1-3779-4511-b7ba-f9a9d200bed4/Screenshot_2024-06-06_at_15.54.39.png)
+    <img width="661" alt="11" src="https://github.com/yottam205/Try-Hack-Me-Challenges/assets/117525375/94b8f988-fcbe-4a53-8ca6-7f7267b604dd">
+
     
 - What was the Server header for the malicious domain from the previous question?
 - Answer
     
     If we look at the TCP stream from the last packet we looked at, we’ll be able to see the answer.
     
-    ![Screenshot 2024-06-06 at 15.59.10.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/98e0a4b1-ac4f-485c-b14c-f2c379e38a49/d485a53f-e64d-41a7-9a34-6c2999d9d88c/Screenshot_2024-06-06_at_15.59.10.png)
+    <img width="965" alt="12" src="https://github.com/yottam205/Try-Hack-Me-Challenges/assets/117525375/39399701-0bae-4f82-89cb-8dcac1b04d2a">
+
     
 - The malware used an API to check for the IP address of the victim’s machine. What was the date and time when the ****DNS ****query for the IP check domain occurred? (**answer format**: yyyy-mm-dd hh:mm:ss UTC)
 - Answer
     
     To find the answer, we’ll have to use a filter that looks at DNS queries and the use of the API. So we’ll use this filter, which shows all the DNS queries combined with an API use: `dns && frame contains "api"`. If we look at the info of the packets, we see that the first packet (number 990) is the only packet that connects with a different domain. The third packet (number 24147), which connects with the other domain and has the use of the API, has our answer.
     
-    ![Screenshot 2024-06-06 at 16.08.17.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/98e0a4b1-ac4f-485c-b14c-f2c379e38a49/c30cddef-3a2b-47b7-b4e4-5b38afb8dac8/Screenshot_2024-06-06_at_16.08.17.png)
+    <img width="1381" alt="13" src="https://github.com/yottam205/Try-Hack-Me-Challenges/assets/117525375/2e2f355c-8508-44d5-a1ee-422eccc6e1ac">
+
     
 - What was the domain in the DNS query from the previous question?
 - Answer
@@ -166,11 +179,12 @@ Answer the questions below
     
     If we use the filter `frame contains "MAIL FROM"` (case sensitive) because that’s what the question says the malicious mail contains, we’ll be able to see the answer right away.
     
-    ![Screenshot 2024-06-06 at 16.13.02.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/98e0a4b1-ac4f-485c-b14c-f2c379e38a49/b1b4bdcd-1af9-4aae-85ca-7991a0eca42a/Screenshot_2024-06-06_at_16.13.02.png)
+    <img width="1220" alt="14" src="https://github.com/yottam205/Try-Hack-Me-Challenges/assets/117525375/67634f83-d48e-426e-95c4-31e8361cabab">
+
     
 - How many packets were observed for the SMTP ****traffic?
 - Answer
     
     If we just filter for `smtp` here, we’ll see the answer.
     
-    ![Screenshot 2024-06-06 at 16.14.23.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/98e0a4b1-ac4f-485c-b14c-f2c379e38a49/c8a75046-f3c2-4884-a9a4-b2650ab5240a/Screenshot_2024-06-06_at_16.14.23.png)
+    <img width="1440" alt="15" src="https://github.com/yottam205/Try-Hack-Me-Challenges/assets/117525375/be5e2e16-159f-4625-983d-4d779f36788a">
