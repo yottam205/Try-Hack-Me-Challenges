@@ -30,7 +30,7 @@ Answer the questions below
     
     *Make sure to delete the decimal number in the seconds.*
     
-    ![Screenshot 2024-06-06 at 10.54.50.png](/Users/yottam205/Documents/GitHub/Try-Hack-Me-Challenges/assets/carnage/1.png)
+    ![Screenshot 2024-06-06 at 10.54.50.png](.assets/carnage/1.png)
     
 - What is the name of the zip file that was downloaded?
 - Answer
